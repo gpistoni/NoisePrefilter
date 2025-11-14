@@ -1,0 +1,16 @@
+matplotlib
+graphviz
+Pillow
+scikit-image
+opencv-python
+numpy
+tqdm
+torchview
+torchmetrics
+omegaconf
+einops
+pytorch_lightning
+onnx
+onnxruntime
+onnxscript
+onnxconverter_common

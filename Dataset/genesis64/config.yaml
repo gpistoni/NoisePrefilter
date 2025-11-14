@@ -1,0 +1,21 @@
+model:
+  target: pix2pix.model.Pix2Pix
+  params:
+    train_gen: True
+    train_disc: True
+    lambda_reg: 100
+
+    generator_config:
+      target: pix2pix.model.UNet4
+      ckpt_path: None
+      params:
+        in_channels: 1
+        out_channels: 1
+        use_checkpoint: False  # per export ONNX
+
+    discriminator_config:
+      target: pix2pix.model.PatchEncoder
+      ckpt_path: None
+      params:
+        c_channels: 1
+        targ_channels: 1
