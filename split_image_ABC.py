@@ -40,7 +40,7 @@ def split_image(image_dir, out_dir, in_name, out_name, out_folder, tile_size, ti
             sub_image = image.crop(box).convert('L')    
 
             # Salva la sottosezione           
-            sub_image_name = out_name + f"_{top}_{left}.png"
+            sub_image_name = out_name + f"_{top}_{left}.bmp"
             sub_image.save(os.path.join(output_folder, sub_image_name))
             i+=1
 

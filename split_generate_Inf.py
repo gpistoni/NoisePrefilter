@@ -1,18 +1,8 @@
-############################################################################################
 import os
-import numpy as np
-import itertools                            # NEVER USE ITERTOOLS.CYCLE ON TRAINING DATA WITH RANDOM AUGMENTATIONS
-import time
-import datetime
 import torch
-import sys
 from defines import *
 
-from torch.utils.data import DataLoader, random_split
-import torch.optim as optim
 
-from matplotlib import gridspec
-import matplotlib.pyplot as plt
 from PIL import Image
 
 # Load Pix2pix code
