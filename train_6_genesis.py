@@ -197,8 +197,8 @@ if __name__ == '__main__':
 
             s+=1
             sys.stdout.write(f"\rSample {s}/{ldl}") 
-            if (ep>10):
-                time.sleep(1)
+            #if (ep>10):
+            #    time.sleep(1)
  
         ############################################################################################
         # End Epoch

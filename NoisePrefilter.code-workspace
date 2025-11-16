@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../Dataset/genesis64"
 		}
 	],
 	"settings": {}

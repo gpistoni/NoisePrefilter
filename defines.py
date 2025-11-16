@@ -4,7 +4,7 @@ from Dataset.genesis64.dataset import Dataloader_genesis, reverse_transform2, re
 ############################################################################################################################################################
 datasetName = "genesis64"
 block_size = 64
-batch_size = 350
+batch_size = 500
 
 ############################################################################################################################################################
 root_dir =  os.path.join('/home/giulipis/Dataset/' , datasetName)

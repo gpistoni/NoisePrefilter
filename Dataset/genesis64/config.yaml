@@ -6,7 +6,7 @@ model:
     lambda_reg: 100
 
     generator_config:
-      target: pix2pix.model.UNet4
+      target: pix2pix.model.UNet3
       ckpt_path: None
       params:
         in_channels: 1
