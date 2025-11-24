@@ -49,7 +49,6 @@ def split_image(image_dir, out_dir, in_name, out_name, out_folder, tile_size, ti
 
 ############################################################################################################################################################
 tile_step_MB = (int)(block_size * 75 / 100)
-tile_step_MC = (int)(block_size * 85 / 100)
 
 image_filenames = [x for x in os.listdir(fullImage_dir)] 
 image_filenames.sort()
@@ -65,11 +64,6 @@ for fname in image_filenames:
         fnameAA = fname.replace("MB_", "MA_")
         split_image(fullImage_dir, sample_dir, fnameAA, "img" + str(bi), "A", block_size, tile_step_MB, 2)
         split_image(fullImage_dir, sample_dir, fname, "img" + str(bi), "B", block_size, tile_step_MB)      # half size source
-        bi += 1
-    if fname.startswith("MC"):  # bianrio vs2
-        fnameAA = fname.replace("MC_", "MA_")
-        split_image(fullImage_dir, sample_dir, fnameAA, "img" + str(bi), "A", block_size, tile_step_MC,2)
-        split_image(fullImage_dir, sample_dir, fname, "img" + str(bi), "B", block_size, tile_step_MC)        # half size source
         bi += 1
 
 print(f"Numero file MB+MC: {bi}")
